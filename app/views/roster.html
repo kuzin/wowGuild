@@ -1,0 +1,35 @@
+<div class="roster">
+
+  <div class="page-header">
+  <h3>Current Roster</h3>
+  </div>
+
+  <table>
+    <thead>
+        <tr>
+          <th>•</th>
+          <th>Name</th>
+          <th>Rank</th>
+          <th>Race</th>
+          <th>Class</th>
+          <th>Spec</th>
+          <th>Level</th>
+          <th>Achievement Points</th>
+        <tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="member in guildAPI.members | orderObjectBy: 'rank'">
+          <td><img ng-src="http://us.battle.net/static-render/us/{{member.character.thumbnail}}"></td>
+          <td>{{member.character.name | limitTo : '10'}}</td>
+          <td><img class="wRank"  ng-src="images/ranks/{{member.rank}}.png"></td>
+          <td><a ng-href="http://wowhead.com/race={{member.character.race}}"><img class="wRace" ng-src="images/races/{{member.character.gender}}{{member.character.race}}.png"></a></td>
+          <td><a ng-href="http://wowhead.com/class={{member.character.class}}"><img class="wClass" ng-src="images/class/64/{{member.character.class}}.png" /></a></td>
+          <td><a ng-href="http://wowhead.com/class={{member.character.class}}"><img class="wSpec"  ng-src="images/spec/{{member.character.class}}/{{member.character.spec.name | lowercase}}.png" /></a></td>
+          <td>{{member.character.level}}</td>
+          <td>{{member.character.achievementPoints | number}}<img src="images/ui/sheild.png" /></td>
+        </tr>
+    </tbody>
+  </table>
+
+
+</div>

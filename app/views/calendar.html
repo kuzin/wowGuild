@@ -1,0 +1,44 @@
+<tien-clndr class="clndr" tien-clndr-object="clndr" tien-clndr-events="events" tien-clndr-options="options" id="full-clndr">
+
+  <div class="clndr-controls">
+    <div class="clndr-previous-button" ng-click="clndr.back()">&lt;</div>
+    <div class="clndr-next-button" ng-click="clndr.forward()">&gt;</div>
+    <div class="current-month">{{month}} {{year}}</div>
+  </div>
+
+  <div class="clndr-grid">
+    <div class="days-of-the-week">
+      <div class="header-day" ng-repeat="day in daysOfTheWeek track by $index">
+        {{day}}
+      </div>
+    </div>
+    <div class="days">
+      <div class="{{day.classes}}" ng-repeat="day in days">
+        <div class="event-indicator" ng-show="day.events.length">{{day.events.length}}</div>
+        {{day.day}}
+      </div>
+    </div>
+  </div>
+
+  <div class="event-listing">
+    <div class="event-listing-title">EVENTS IN {{month | uppercase}}</div>
+      <div class="event-item" ng-repeat="event in clndr.eventsThisInterval track by $index" ng-show="clndr.eventsThisInterval.length != 0">
+        <div class="blizard-event" style="background: pink" ng-show="event.organizer == 'mailto:blizzard@dalaran.worldofwarcraft'">
+          <time ng-show="event.start">{{event.start | date : 'MMM dd @ h a'}} <div ng-hide="event.start == event.end">- {{event.end | date : 'h a'}}</div></time>
+          <time ng-show="event.date">{{event.date | date : 'MMM dd'}}</time>
+          <div class="event-item-name">{{event.title}}</div>
+        </div>
+        <div class="guild-event" ng-show="event.organizer != 'mailto:blizzard@dalaran.worldofwarcraft'">
+          <time ng-show="event.start">{{event.start | date : 'MMM dd @ h a'}} <div ng-hide="event.start == event.end">- {{event.end | date : 'h a'}}</div></time>
+          <time ng-show="event.date">{{event.date | date : 'MMM dd'}} - </time>
+          <div class="event-item-name"><strong>{{event.title}}</strong></div>
+          <div class="event-item-location" ng-hide="event.location == ''">{{event.location}}</div>
+          <div class="event-item-description" ng-hide="event.description == ''">{{event.description}}</div>
+        </div>
+      </div>
+      <div class="events-none" ng-show="clndr.eventsThisInterval.length == 0">
+        <h1>No Events</h1>
+      </div>
+  </div>
+
+</tien-clndr>

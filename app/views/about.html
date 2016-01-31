@@ -1,0 +1,11 @@
+<div class="memberList">
+
+  <ul class="roster-window">
+    <li ng-repeat="member in guildAPI.members | orderObjectBy: 'rank'"
+    ng-style="{'background-image' : 'url(http://render-api-us.worldofwarcraft.com/static-render/us/' + (member.character.thumbnail | processID) + '-profilemain.jpg)'}">
+      <h3>{{member.character.name | limitTo : '10'}}<span ng-if="member.character.name.length > 10">...</span></h3>
+      <img class="wRank"  ng-src="images/ranks/{{member.rank}}.png">
+    </li>
+  </ul>
+
+</div>

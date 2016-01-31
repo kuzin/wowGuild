@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css" />
+    <link rel="stylesheet" href="bower_components/angular-clndr/angular-clndr.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="wowApp">
+
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <a class="navbar-brand" ng-href="#/">
+        <img alt="Emblem" class="emblem" src="images/ui/emblem_194.png" >
+        <img alt="Brand" class="logo" src="images/ui/slsp.png" >
+      </a>
+      <ul class="nav navbar-nav navbar-right" auto-active>
+        <li><a ng-href="#/">Home</a></li>
+        <li><a ng-href="#/blog">Blog</a></li>
+        <li><a ng-href="#/about">About</a></li>
+        <li><a ng-href="#/roster">Roster</a></li>
+        <li><a ng-href="#/calendar">Calendar</a></li>
+        <li>
+          <p class="navbar-btn" style="margin-left: 15px;">
+            <a ng-href="#/apply" class="btn btn-default btn-sm" style="text-transform: uppercase; font-weight: 600; border: none; margin-top: 3px;">
+              Apply
+              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+            </a>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="colorizer container-color">
+      <div class="container body">
+        <div class="alert alert-info" role="alert">
+          <strong>Welcome</strong> to the new Seventh Level Save Point website. This is a constant work in progress. If you have any sugguestions or comments, please contact <strong>Tukao</strong> in game.
+        </div>
+        <div ng-view=""></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <img src="images/ui/large.png" class="footer-img" />
+      <credits>Powered by Angular, Node, and PouchDB. <br/> Built by <a href="http://kuzn.me">KUZN</a> &copy; <span ng-show-year></span>. <br/> All Rights Reserved.</credits>
+    </div>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/angular-moment/angular-moment.js"></script>
+    <script src="bower_components/angular-order-object-by/src/ng-order-object-by.js"></script>
+    <script src="bower_components/angular-ellipsis/src/angular-ellipsis.js"></script>
+    <script src="bower_components/angular-utils-pagination/dirPagination.js"></script>
+    <script src="bower_components/oclazyload/dist/ocLazyLoad.js"></script>
+    <script src="bower_components/angular-deckgrid/angular-deckgrid.js"></script>
+    <script src="bower_components/pouchdb/dist/pouchdb.js"></script>
+    <script src="bower_components/angular-pouchdb/angular-pouchdb.js"></script>
+    <script src="bower_components/marked/lib/marked.js"></script>
+    <script src="bower_components/angular-marked/dist/angular-marked.js"></script>
+    <script src="bower_components/fullcalendar/dist/fullcalendar.js"></script>
+    <script src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+    <script src="bower_components/clndr/clndr.min.js"></script>
+    <script src="bower_components/angular-clndr/angular-clndr.js"></script>
+    <script src="bower_components/ical.js/build/ical.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/db.js"></script>
+    <script src="scripts/blog.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/calendar.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
