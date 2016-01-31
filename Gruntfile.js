@@ -224,7 +224,7 @@ module.exports = function (grunt) {
         src: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
         ignorePath: /(\.\.\/){1,2}bower_components\//
       }
-    }, 
+    },
 
     // Compiles Sass to CSS and generates necessary files if requested
     compass: {
@@ -256,16 +256,16 @@ module.exports = function (grunt) {
     },
 
     // Renames files for browser caching purposes
-    filerev: {
-      dist: {
-        src: [
-          '<%= yeoman.dist %>/scripts/{,*/}*.js',
-          '<%= yeoman.dist %>/styles/{,*/}*.css',
-          '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-          '<%= yeoman.dist %>/styles/fonts/*'
-        ]
-      }
-    },
+    // filerev: {
+    //   dist: {
+    //     src: [
+    //       '<%= yeoman.dist %>/scripts/{,*/}*.js',
+    //       '<%= yeoman.dist %>/styles/{,*/}*.css',
+    //       '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+    //       '<%= yeoman.dist %>/styles/fonts/*'
+    //     ]
+    //   }
+    // },
 
     // Reads HTML for usemin blocks to enable smart builds that automatically
     // concat, minify and revision files. Creates configurations in memory so
@@ -502,7 +502,7 @@ module.exports = function (grunt) {
     'cdnify',
     'cssmin',
     'uglify',
-    'filerev',
+    // 'filerev',
     'usemin',
     'htmlmin'
   ]);
