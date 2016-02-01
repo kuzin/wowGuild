@@ -28,6 +28,11 @@ angular
     'ngSanitize',
     'markdown'
   ])
+  .config(function (BackandProvider) {
+      BackandProvider.setAppName('wowapi');
+      BackandProvider.setSignUpToken('27133402-39d7-4c22-9161-98fe93fce4b1');
+      BackandProvider.setAnonymousToken('e3b8a7c6-a2b1-4661-b467-c3e62257a852');
+  })
   .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     function route (template, ctrl, path) {
       $routeProvider.when(path, {
@@ -49,12 +54,7 @@ angular
     $routeProvider.otherwise({ redirectTo: '/404' });
     // $locationProvider.html5Mode(true);
 
-  }])
-  .config(function (BackandProvider) {
-      BackandProvider.setAppName('wowapi');
-      BackandProvider.setSignUpToken('27133402-39d7-4c22-9161-98fe93fce4b1');
-      BackandProvider.setAnonymousToken('e3b8a7c6-a2b1-4661-b467-c3e62257a852');
-  });
+  }]);
 
 angular
   .module('processIDFilter', []).filter('processID', function() {
