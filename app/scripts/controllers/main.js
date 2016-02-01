@@ -17,8 +17,6 @@ angular
       '?fields=members,news&locale=en_US&apikey=' + API_KEY)
       .success(function (data) {
         $scope.guildAPI = data;
-        var wowhead_tooltips = { "colorlinks": true, "iconizelinks": true, "renamelinks": true };
-        $ocLazyLoad.load('//wow.zamimg.com/widgets/power.js');
     });
 
   });

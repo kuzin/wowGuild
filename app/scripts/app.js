@@ -49,6 +49,7 @@ angular
     route('blog' ,    'BlogCtrl',    '/blog');
     route('calendar', 'CalCtrl',     '/calendar');
     route('apply',    'MainCtrl',    '/apply');
+    route('post',     'PostCtrl',    '/blog/post')
 
     // 404
     $routeProvider.otherwise({ redirectTo: '/404' });

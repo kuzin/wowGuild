@@ -26,20 +26,22 @@ angular
 
 
   })
-  .controller('PostCtrl', function ($route, $scope, $http, Backand) {
+  .controller('PostCtrl', function ($route, $scope, $http, Backand, $location) {
 
     $scope.title = '';
     $scope.date = '';
     $scope.content = '';
+    $scope.imageUrl = '';
 
     $scope.postBlog = function () {
       var data = {
         title: $scope.title,
         date: new Date(),
-        content: $scope.content
+        content: $scope.content,
+        image: $scope.imageUrl
       };
       $http.post(Backand.getApiUrl() + '/1/objects/posts', data).success(function(data, status) {
-        $route.reload();
+        $location.path('/#/blog');
       });
     };
   });
