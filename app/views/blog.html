@@ -37,19 +37,9 @@
   </ul>
 </div>
 
-<div style="color: white !important">
-  <div class="row" ng-hide="posts">
-    <h1>Loading</h1>
-  </div>
-  <div class="row" ng-show="posts.length == 0">
-    <h1>No Posts!</h1>
-  </div>
-  <ul class="posts">
-    <li class="post" id="{{post._id}}" ng-repeat="post in posts | orderBy:'date': true">
-      {{ post.date | date: 'MM/dd/yyyy' }}
-      <a ng-href="#/blog/edit/{{post._id}}">Edit</a>
-      <div class="" ng-bind-html="post.body | markdown"></article>
-    </li>
-  </ul>
-
-</div>
+<ul>
+<li ng-repeat="post in posts.data">
+  <h2 ng-bind-html="post.title | markdown"></h2>
+  <div ng-bind-html="post.content | markdown"></div>
+</li>
+</ul>

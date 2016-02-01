@@ -7,15 +7,10 @@
  * # AboutCtrl
  * Controller of the wowApp
  */
+
 angular.module('wowApp')
   .controller('CalCtrl', function ($scope, $log, $http) {
     $scope.$log = $log;
-    // $scope.events = [
-    //   {
-    //     date : new Date(),
-    //     title : 'Guild Event'
-    //   }
-    // ];
 
     $scope.options = {
         multiDayEvents: {
