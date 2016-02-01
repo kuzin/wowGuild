@@ -413,7 +413,9 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '*.html',
             'images/**/*',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'mods/**/*',
+            'data/**/*'
           ]
         }, {
           expand: true,
