@@ -27,7 +27,7 @@
   </div>
 
   <div class="event-listing">
-    <div class="event-listing-title">EVENTS IN {{month | uppercase}}</div>
+    <div class="event-listing-title">UPCOMING EVENTS IN {{month | uppercase}}</div>
       <div class="event-item" ng-repeat="event in clndr.eventsThisInterval track by $index" ng-show="clndr.eventsThisInterval.length != 0">
         <div class="blizard-event" style="background: pink" ng-show="event.organizer == 'mailto:blizzard@dalaran.worldofwarcraft'">
           <time ng-show="event.start">{{event.start | date : 'MMM dd @ h a'}} <div ng-hide="event.start == event.end">- {{event.end | date : 'h a'}}</div></time>

@@ -11,12 +11,6 @@
 
 angular
   .module('wowApp')
-  .controller('MainCtrl', function($scope, $http, API_KEY, REALM, GUILD, BASE_URL, $ocLazyLoad) {
-    // Grab Guild API
-    $http.get(BASE_URL + '/wow/guild/' + REALM +'/' + GUILD +
-      '?fields=members,news&locale=en_US&apikey=' + API_KEY)
-      .success(function (data) {
-        $scope.guildAPI = data;
-    });
-
-  });
+  .controller('MainCtrl', ['$scope', 'ApiService', function($scope, ApiService) {
+    $scope.wowData = ApiService.get();
+  }]);

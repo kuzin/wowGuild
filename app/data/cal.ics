@@ -2,129 +2,12 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//wobbleworks.com//GroupCalendar5.7
 BEGIN:VEVENT
-UID:wobbleworks.com//GC5//Dalaran//Tukao//761751
-SEQUENCE:1
-CREATED:20160131T154700Z
-DTSTART:20160117T130000Z
-DTEND:20160117T130000Z
-DTSTAMP:20160131T171200Z
-SUMMARY:Raid
-DESCRIPTION:
-LOCATION:
-ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//Dalaran//Tukao//946225
-SEQUENCE:1
-CREATED:20160131T154700Z
-DTSTART:20160118T003000Z
-DTEND:20160118T003000Z
-DTSTAMP:20160131T171200Z
-SUMMARY:Raid
-DESCRIPTION:
-LOCATION:
-ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//Dalaran//Tukao//797941
-SEQUENCE:1
-CREATED:20160131T154700Z
-DTSTART:20160118T130000Z
-DTEND:20160118T130000Z
-DTSTAMP:20160131T171200Z
-SUMMARY:Raid
-DESCRIPTION:
-LOCATION:
-ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//Dalaran//Tukao//441932
-SEQUENCE:1
-CREATED:20160131T154700Z
-DTSTART:20160119T003000Z
-DTEND:20160119T003000Z
-DTSTAMP:20160131T171200Z
-SUMMARY:Raid
-DESCRIPTION:
-LOCATION:
-ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//Dalaran//Tukao//141196
-SEQUENCE:1
-CREATED:20160131T154700Z
-DTSTART:20160122T010000Z
-DTEND:20160122T010000Z
-DTSTAMP:20160131T171200Z
-SUMMARY:Raid
-DESCRIPTION:
-LOCATION:
-ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//Dalaran//Tukao//179810
-SEQUENCE:1
-CREATED:20160131T154700Z
-DTSTART:20160123T010000Z
-DTEND:20160123T010000Z
-DTSTAMP:20160131T171200Z
-SUMMARY:Raid
-DESCRIPTION:
-LOCATION:
-ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//Dalaran//Tukao//34606
-SEQUENCE:1
-CREATED:20160131T154700Z
-DTSTART:20160125T010000Z
-DTEND:20160125T010000Z
-DTSTAMP:20160131T171200Z
-SUMMARY:Raid
-DESCRIPTION:
-LOCATION:
-ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//Dalaran//Tukao//49071
-SEQUENCE:1
-CREATED:20160131T154700Z
-DTSTART:20160129T010000Z
-DTEND:20160129T010000Z
-DTSTAMP:20160131T171200Z
-SUMMARY:Raid
-DESCRIPTION:
-LOCATION:
-ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//Dalaran//Tukao//46782
-SEQUENCE:1
-CREATED:20160131T154700Z
-DTSTART:20160130T010000Z
-DTEND:20160130T010000Z
-DTSTAMP:20160131T171200Z
-SUMMARY:Raid
-DESCRIPTION:
-LOCATION:
-ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
 UID:wobbleworks.com//GC5//Dalaran//Tukao//412891
 SEQUENCE:1
 CREATED:20160131T154700Z
 DTSTART:20160201T010000Z
 DTEND:20160201T010000Z
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Raid
 DESCRIPTION:This is a real raid schedule\, not a roster check. Please sign up if you want to raid on this night. Please allot 2-3 hours for the raid\, per night. DPS needs to be atleast 30k.
 LOCATION:Hellfire Citadel
@@ -134,10 +17,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160201//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART:20160201T180000Z
 DTEND:20160201T180000Z
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Lunar Festival Begins
 DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
 LOCATION:
@@ -147,10 +30,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160202//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160202
 DTEND;VALUE=DATE:20160202
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Lunar Festival
 DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
 LOCATION:
@@ -159,58 +42,72 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160203//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160203
 DTEND;VALUE=DATE:20160203
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Lunar Festival
 DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
 LOCATION:
 ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
 END:VEVENT
 BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160204//2
+UID:wobbleworks.com//GC5//HOLIDAY//20160204//3
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160204
 DTEND;VALUE=DATE:20160204
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Lunar Festival
 DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
 LOCATION:
 ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
 END:VEVENT
 BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160205//1
+UID:wobbleworks.com//GC5//Dalaran//Tukao//9713
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160204T031100Z
+DTSTART:20160205T010000Z
+DTEND:20160205T010000Z
+DTSTAMP:20160215T020900Z
+SUMMARY:H HFC Raid
+DESCRIPTION:Would like a guild group but if not we're going still\, even if we have to do a PUG.
+LOCATION:Hellfire Citadel
+ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wobbleworks.com//GC5//HOLIDAY//20160205//2
+SEQUENCE:1
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160205
 DTEND;VALUE=DATE:20160205
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Lunar Festival
 DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
 LOCATION:
 ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
+END:VEVENT
+BEGIN:VEVENT
+UID:wobbleworks.com//GC5//Dalaran//Tukao//490138
+SEQUENCE:1
+CREATED:20160204T031100Z
+DTSTART:20160206T010000Z
+DTEND:20160206T010000Z
+DTSTAMP:20160215T020900Z
+SUMMARY:H HFC Raid
+DESCRIPTION:Would like a guild group but if not we're going still\, even if we have to do a PUG.
+LOCATION:Hellfire Citadel
+ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
+TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160206//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160206
 DTEND;VALUE=DATE:20160206
-DTSTAMP:20160131T171200Z
-SUMMARY:Lunar Festival
-DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
-LOCATION:
-ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160207//1
-SEQUENCE:1
-CREATED:20160131T171200Z
-DTSTART;VALUE=DATE:20160207
-DTEND;VALUE=DATE:20160207
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Lunar Festival
 DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
 LOCATION:
@@ -219,83 +116,59 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160207//2
 SEQUENCE:1
-CREATED:20160131T171200Z
-DTSTART:20160207T080000Z
-DTEND:20160207T080000Z
-DTSTAMP:20160131T171200Z
-SUMMARY:Darkmoon Faire Begins
-DESCRIPTION:The Darkmoon Faire is open for business! \n\nMeet Silas Darkmoon and his troupe\, play games that test mind and nerve\, and behold exotic sights from the four corners of Azeroth... and beyond!
-LOCATION:
-ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160208//2
-SEQUENCE:1
-CREATED:20160131T171200Z
-DTSTART;VALUE=DATE:20160208
-DTEND;VALUE=DATE:20160208
-DTSTAMP:20160131T171200Z
-SUMMARY:Darkmoon Faire
-DESCRIPTION:The Darkmoon Faire is open for business! \n\nMeet Silas Darkmoon and his troupe\, play games that test mind and nerve\, and behold exotic sights from the four corners of Azeroth... and beyond!
-LOCATION:
-ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160208//1
-SEQUENCE:1
-CREATED:20160131T171200Z
-DTSTART;VALUE=DATE:20160208
-DTEND;VALUE=DATE:20160208
-DTSTAMP:20160131T171200Z
+CREATED:20160215T020900Z
+DTSTART;VALUE=DATE:20160207
+DTEND;VALUE=DATE:20160207
+DTSTAMP:20160215T020900Z
 SUMMARY:Lunar Festival
 DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
 LOCATION:
 ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
 END:VEVENT
 BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160209//2
+UID:wobbleworks.com//GC5//Dalaran//Tukao//125533
 SEQUENCE:1
-CREATED:20160131T171200Z
-DTSTART;VALUE=DATE:20160209
-DTEND;VALUE=DATE:20160209
-DTSTAMP:20160131T171200Z
-SUMMARY:Darkmoon Faire
-DESCRIPTION:The Darkmoon Faire is open for business! \n\nMeet Silas Darkmoon and his troupe\, play games that test mind and nerve\, and behold exotic sights from the four corners of Azeroth... and beyond!
+CREATED:20160204T031100Z
+DTSTART:20160208T010000Z
+DTEND:20160208T010000Z
+DTSTAMP:20160215T020900Z
+SUMMARY:H HFC Raid
+DESCRIPTION:Would like a guild group but if not we're going still\, even if we have to do a PUG.
+LOCATION:Hellfire Citadel
+ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wobbleworks.com//GC5//HOLIDAY//20160208//1
+SEQUENCE:1
+CREATED:20160215T020900Z
+DTSTART;VALUE=DATE:20160208
+DTEND;VALUE=DATE:20160208
+DTSTAMP:20160215T020900Z
+SUMMARY:Lunar Festival
+DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
 LOCATION:
 ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
 END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160209//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160209
 DTEND;VALUE=DATE:20160209
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Lunar Festival
 DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
 LOCATION:
 ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
 END:VEVENT
 BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160210//2
-SEQUENCE:1
-CREATED:20160131T171200Z
-DTSTART;VALUE=DATE:20160210
-DTEND;VALUE=DATE:20160210
-DTSTAMP:20160131T171200Z
-SUMMARY:Darkmoon Faire
-DESCRIPTION:The Darkmoon Faire is open for business! \n\nMeet Silas Darkmoon and his troupe\, play games that test mind and nerve\, and behold exotic sights from the four corners of Azeroth... and beyond!
-LOCATION:
-ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
-END:VEVENT
-BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160210//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160210
 DTEND;VALUE=DATE:20160210
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Lunar Festival
 DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
 LOCATION:
@@ -304,82 +177,60 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160211//2
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160211
 DTEND;VALUE=DATE:20160211
-DTSTAMP:20160131T171200Z
-SUMMARY:Darkmoon Faire
-DESCRIPTION:The Darkmoon Faire is open for business! \n\nMeet Silas Darkmoon and his troupe\, play games that test mind and nerve\, and behold exotic sights from the four corners of Azeroth... and beyond!
-LOCATION:
-ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160211//1
-SEQUENCE:1
-CREATED:20160131T171200Z
-DTSTART;VALUE=DATE:20160211
-DTEND;VALUE=DATE:20160211
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Lunar Festival
 DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
 LOCATION:
 ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
+END:VEVENT
+BEGIN:VEVENT
+UID:wobbleworks.com//GC5//Dalaran//Tukao//120736
+SEQUENCE:1
+CREATED:20160210T235800Z
+DTSTART:20160212T010000Z
+DTEND:20160212T010000Z
+DTSTAMP:20160215T020900Z
+SUMMARY:HFC
+DESCRIPTION:I would like for as many guild members to go as possible. We will pug the rest. \n\nObjective - Clear most\, if not all\, of lower citadel so we can begin working on upper citadel tomorrow night. \n\nGoal - Progress to and defeat Gorefiend
+LOCATION:Hellfire Citadel
+ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
+TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160212//2
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160212
 DTEND;VALUE=DATE:20160212
-DTSTAMP:20160131T171200Z
-SUMMARY:Darkmoon Faire
-DESCRIPTION:The Darkmoon Faire is open for business! \n\nMeet Silas Darkmoon and his troupe\, play games that test mind and nerve\, and behold exotic sights from the four corners of Azeroth... and beyond!
-LOCATION:
-ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160212//1
-SEQUENCE:1
-CREATED:20160131T171200Z
-DTSTART;VALUE=DATE:20160212
-DTEND;VALUE=DATE:20160212
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Lunar Festival
 DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
 LOCATION:
 ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
 END:VEVENT
 BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160213//2
+UID:wobbleworks.com//GC5//Dalaran//Tukao//505673
 SEQUENCE:1
-CREATED:20160131T171200Z
-DTSTART;VALUE=DATE:20160213
-DTEND;VALUE=DATE:20160213
-DTSTAMP:20160131T171200Z
-SUMMARY:Darkmoon Faire
-DESCRIPTION:The Darkmoon Faire is open for business! \n\nMeet Silas Darkmoon and his troupe\, play games that test mind and nerve\, and behold exotic sights from the four corners of Azeroth... and beyond!
-LOCATION:
-ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
+CREATED:20160210T235800Z
+DTSTART:20160213T010000Z
+DTEND:20160213T010000Z
+DTSTAMP:20160215T020900Z
+SUMMARY:HFC
+DESCRIPTION:Starting upper citadel.\n\n* If we want to attempt Iskar\, everyone will also need to download the addon called iskar assist.*\n\nObjective - Get majority\, if not all\, of upper citadel done so we can do Arch on Sunday. \n\nGoal - Progress to and defeat Mannoroth
+LOCATION:Hellfire Citadel
+ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
+TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160213//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160213
 DTEND;VALUE=DATE:20160213
-DTSTAMP:20160131T171200Z
-SUMMARY:Lunar Festival
-DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
-LOCATION:
-ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160214//1
-SEQUENCE:1
-CREATED:20160131T171200Z
-DTSTART;VALUE=DATE:20160214
-DTEND;VALUE=DATE:20160214
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Lunar Festival
 DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
 LOCATION:
@@ -388,23 +239,35 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160214//2
 SEQUENCE:1
-CREATED:20160131T171200Z
-DTSTART:20160214T080000Z
-DTEND:20160214T080000Z
-DTSTAMP:20160131T171200Z
-SUMMARY:Darkmoon Faire Ends
-DESCRIPTION:The Darkmoon Faire is open for business! \n\nMeet Silas Darkmoon and his troupe\, play games that test mind and nerve\, and behold exotic sights from the four corners of Azeroth... and beyond!
+CREATED:20160215T020900Z
+DTSTART;VALUE=DATE:20160214
+DTEND;VALUE=DATE:20160214
+DTSTAMP:20160215T020900Z
+SUMMARY:Lunar Festival
+DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
 LOCATION:
 ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
+END:VEVENT
+BEGIN:VEVENT
+UID:wobbleworks.com//GC5//Dalaran//Tukao//999590
+SEQUENCE:1
+CREATED:20160210T235800Z
+DTSTART:20160215T010000Z
+DTEND:20160215T010000Z
+DTSTAMP:20160215T020900Z
+SUMMARY:HFC
+DESCRIPTION:Finishing up HFC raid. If time permits\, maybe we can do some panda or cata raid acheives.\n\nObjective - Progress to the black gate and possibly do old content raids for acheives/mounts afterwards.\n\nGoal - Progress to and defeat Archimonde.
+LOCATION:Hellfire Citadel
+ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160215//2
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART:20160215T180000Z
 DTEND:20160215T180000Z
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Love is in the Air Begins
 DESCRIPTION:Something is in the air in the major cities of Azeroth.  Many guards and townsfolk spend their days giving and receiving gifts to other amorous citizens.
 LOCATION:
@@ -414,10 +277,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160215//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART:20160215T180000Z
 DTEND:20160215T180000Z
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Lunar Festival Ends
 DESCRIPTION:Every year the druids of Moonglade hold a celebration of their city's great triumph over an ancient evil. During the Lunar Festival\, citizens of Azeroth have the opportunity to honor their elders by celebrating their sage wisdom\, sharing in magnificent feasts\, and of course... shooting fireworks!\n
 LOCATION:
@@ -427,22 +290,74 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160216//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160216
 DTEND;VALUE=DATE:20160216
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Love is in the Air
 DESCRIPTION:Something is in the air in the major cities of Azeroth.  Many guards and townsfolk spend their days giving and receiving gifts to other amorous citizens.
 LOCATION:
 ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
 END:VEVENT
 BEGIN:VEVENT
+UID:wobbleworks.com//GC5//Dalaran//Tukao//55053
+SEQUENCE:1
+CREATED:20160211T005600Z
+DTSTART:20160216T155900Z
+DTEND:20160216T155900Z
+DTSTAMP:20160215T020900Z
+SUMMARY:Auchindoun (Mythic) Unlocks
+DESCRIPTION:
+LOCATION:
+ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wobbleworks.com//GC5//Dalaran//Tukao//414424
+SEQUENCE:1
+CREATED:20160211T013600Z
+DTSTART:20160216T155900Z
+DTEND:20160216T155900Z
+DTSTAMP:20160215T020900Z
+SUMMARY:Grimrail Depot (Mythic) Unlocks
+DESCRIPTION:
+LOCATION:
+ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wobbleworks.com//GC5//Dalaran//Tukao//365277
+SEQUENCE:1
+CREATED:20160213T224700Z
+DTSTART:20160216T155900Z
+DTEND:20160216T155900Z
+DTSTAMP:20160215T020900Z
+SUMMARY:The Everbloom (Mythic) Unlocks
+DESCRIPTION:
+LOCATION:
+ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wobbleworks.com//GC5//Dalaran//Tukao//283673
+SEQUENCE:1
+CREATED:20160213T224700Z
+DTSTART:20160216T155900Z
+DTEND:20160216T155900Z
+DTSTAMP:20160215T020900Z
+SUMMARY:Upper Blackrock Spire (Mythic) Unlocks
+DESCRIPTION:
+LOCATION:
+ORGANIZER;CN=Tukao:mailto:tukao@dalaran.worldofwarcraft
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160217//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160217
 DTEND;VALUE=DATE:20160217
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Love is in the Air
 DESCRIPTION:Something is in the air in the major cities of Azeroth.  Many guards and townsfolk spend their days giving and receiving gifts to other amorous citizens.
 LOCATION:
@@ -451,10 +366,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160218//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160218
 DTEND;VALUE=DATE:20160218
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Love is in the Air
 DESCRIPTION:Something is in the air in the major cities of Azeroth.  Many guards and townsfolk spend their days giving and receiving gifts to other amorous citizens.
 LOCATION:
@@ -463,10 +378,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160219//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160219
 DTEND;VALUE=DATE:20160219
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Love is in the Air
 DESCRIPTION:Something is in the air in the major cities of Azeroth.  Many guards and townsfolk spend their days giving and receiving gifts to other amorous citizens.
 LOCATION:
@@ -475,10 +390,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160220//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160220
 DTEND;VALUE=DATE:20160220
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Love is in the Air
 DESCRIPTION:Something is in the air in the major cities of Azeroth.  Many guards and townsfolk spend their days giving and receiving gifts to other amorous citizens.
 LOCATION:
@@ -487,10 +402,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160221//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160221
 DTEND;VALUE=DATE:20160221
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Love is in the Air
 DESCRIPTION:Something is in the air in the major cities of Azeroth.  Many guards and townsfolk spend their days giving and receiving gifts to other amorous citizens.
 LOCATION:
@@ -499,10 +414,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160222//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160222
 DTEND;VALUE=DATE:20160222
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Love is in the Air
 DESCRIPTION:Something is in the air in the major cities of Azeroth.  Many guards and townsfolk spend their days giving and receiving gifts to other amorous citizens.
 LOCATION:
@@ -511,10 +426,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160223//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160223
 DTEND;VALUE=DATE:20160223
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Love is in the Air
 DESCRIPTION:Something is in the air in the major cities of Azeroth.  Many guards and townsfolk spend their days giving and receiving gifts to other amorous citizens.
 LOCATION:
@@ -523,10 +438,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160224//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160224
 DTEND;VALUE=DATE:20160224
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Love is in the Air
 DESCRIPTION:Something is in the air in the major cities of Azeroth.  Many guards and townsfolk spend their days giving and receiving gifts to other amorous citizens.
 LOCATION:
@@ -535,10 +450,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160225//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160225
 DTEND;VALUE=DATE:20160225
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Love is in the Air
 DESCRIPTION:Something is in the air in the major cities of Azeroth.  Many guards and townsfolk spend their days giving and receiving gifts to other amorous citizens.
 LOCATION:
@@ -547,10 +462,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160226//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160226
 DTEND;VALUE=DATE:20160226
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Love is in the Air
 DESCRIPTION:Something is in the air in the major cities of Azeroth.  Many guards and townsfolk spend their days giving and receiving gifts to other amorous citizens.
 LOCATION:
@@ -559,10 +474,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160227//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160227
 DTEND;VALUE=DATE:20160227
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Love is in the Air
 DESCRIPTION:Something is in the air in the major cities of Azeroth.  Many guards and townsfolk spend their days giving and receiving gifts to other amorous citizens.
 LOCATION:
@@ -571,10 +486,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160228//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART;VALUE=DATE:20160228
 DTEND;VALUE=DATE:20160228
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Love is in the Air
 DESCRIPTION:Something is in the air in the major cities of Azeroth.  Many guards and townsfolk spend their days giving and receiving gifts to other amorous citizens.
 LOCATION:
@@ -583,110 +498,12 @@ END:VEVENT
 BEGIN:VEVENT
 UID:wobbleworks.com//GC5//HOLIDAY//20160229//1
 SEQUENCE:1
-CREATED:20160131T171200Z
+CREATED:20160215T020900Z
 DTSTART:20160229T180000Z
 DTEND:20160229T180000Z
-DTSTAMP:20160131T171200Z
+DTSTAMP:20160215T020900Z
 SUMMARY:Love is in the Air Ends
 DESCRIPTION:Something is in the air in the major cities of Azeroth.  Many guards and townsfolk spend their days giving and receiving gifts to other amorous citizens.
-LOCATION:
-ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160306//1
-SEQUENCE:1
-CREATED:20160131T171200Z
-DTSTART:20160306T080000Z
-DTEND:20160306T080000Z
-DTSTAMP:20160131T171200Z
-SUMMARY:Darkmoon Faire Begins
-DESCRIPTION:The Darkmoon Faire is open for business! \n\nMeet Silas Darkmoon and his troupe\, play games that test mind and nerve\, and behold exotic sights from the four corners of Azeroth... and beyond!
-LOCATION:
-ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160307//1
-SEQUENCE:1
-CREATED:20160131T171200Z
-DTSTART;VALUE=DATE:20160307
-DTEND;VALUE=DATE:20160307
-DTSTAMP:20160131T171200Z
-SUMMARY:Darkmoon Faire
-DESCRIPTION:The Darkmoon Faire is open for business! \n\nMeet Silas Darkmoon and his troupe\, play games that test mind and nerve\, and behold exotic sights from the four corners of Azeroth... and beyond!
-LOCATION:
-ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160308//1
-SEQUENCE:1
-CREATED:20160131T171200Z
-DTSTART;VALUE=DATE:20160308
-DTEND;VALUE=DATE:20160308
-DTSTAMP:20160131T171200Z
-SUMMARY:Darkmoon Faire
-DESCRIPTION:The Darkmoon Faire is open for business! \n\nMeet Silas Darkmoon and his troupe\, play games that test mind and nerve\, and behold exotic sights from the four corners of Azeroth... and beyond!
-LOCATION:
-ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160309//1
-SEQUENCE:1
-CREATED:20160131T171200Z
-DTSTART;VALUE=DATE:20160309
-DTEND;VALUE=DATE:20160309
-DTSTAMP:20160131T171200Z
-SUMMARY:Darkmoon Faire
-DESCRIPTION:The Darkmoon Faire is open for business! \n\nMeet Silas Darkmoon and his troupe\, play games that test mind and nerve\, and behold exotic sights from the four corners of Azeroth... and beyond!
-LOCATION:
-ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160310//1
-SEQUENCE:1
-CREATED:20160131T171300Z
-DTSTART;VALUE=DATE:20160310
-DTEND;VALUE=DATE:20160310
-DTSTAMP:20160131T171300Z
-SUMMARY:Darkmoon Faire
-DESCRIPTION:The Darkmoon Faire is open for business! \n\nMeet Silas Darkmoon and his troupe\, play games that test mind and nerve\, and behold exotic sights from the four corners of Azeroth... and beyond!
-LOCATION:
-ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160311//1
-SEQUENCE:1
-CREATED:20160131T171300Z
-DTSTART;VALUE=DATE:20160311
-DTEND;VALUE=DATE:20160311
-DTSTAMP:20160131T171300Z
-SUMMARY:Darkmoon Faire
-DESCRIPTION:The Darkmoon Faire is open for business! \n\nMeet Silas Darkmoon and his troupe\, play games that test mind and nerve\, and behold exotic sights from the four corners of Azeroth... and beyond!
-LOCATION:
-ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160312//1
-SEQUENCE:1
-CREATED:20160131T171300Z
-DTSTART;VALUE=DATE:20160312
-DTEND;VALUE=DATE:20160312
-DTSTAMP:20160131T171300Z
-SUMMARY:Darkmoon Faire
-DESCRIPTION:The Darkmoon Faire is open for business! \n\nMeet Silas Darkmoon and his troupe\, play games that test mind and nerve\, and behold exotic sights from the four corners of Azeroth... and beyond!
-LOCATION:
-ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
-END:VEVENT
-BEGIN:VEVENT
-UID:wobbleworks.com//GC5//HOLIDAY//20160313//1
-SEQUENCE:1
-CREATED:20160131T171300Z
-DTSTART:20160313T080000Z
-DTEND:20160313T080000Z
-DTSTAMP:20160131T171300Z
-SUMMARY:Darkmoon Faire Ends
-DESCRIPTION:The Darkmoon Faire is open for business! \n\nMeet Silas Darkmoon and his troupe\, play games that test mind and nerve\, and behold exotic sights from the four corners of Azeroth... and beyond!
 LOCATION:
 ORGANIZER;CN=Blizzard:mailto:blizzard@dalaran.worldofwarcraft
 TRANSP:OPAQUE

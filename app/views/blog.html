@@ -2,11 +2,11 @@
 <h3>Blog</h3>
 </div>
 
-<div class="newsList" ng-controller="MainCtrl">
+<div class="newsList border" ng-controller="NewsCtrl">
 <h4>News Feed</h4>
-<dir-pagination-controls template-url="mods/paging.html"></dir-pagination-controls>
+
   <ul class="guild-news">
-    <li dir-paginate="story in guildAPI.news | itemsPerPage: 10" class="{{story.type}}">
+    <li ng-repeat="story in newslog" class="{{story.type}}">
       <div class="achievement" ng-show="{{story.type == 'guildAchievement'}}">
         <a ng-href="http://wowhead.com/achievement={{story.achievement.id}}">{{story.achievement.title}}</a>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -40,10 +40,10 @@
     </li>
   </ul>
 </div>
-<ul class="blog">
+<ul class="blog border">
 <li ng-repeat="post in posts.data | orderBy : post.id : true">
   <h2 ng-bind-html="post.title | markdown"></h2>
-  <img ng-src="{{post.image}}" ng-show="post.image.length" />
-  <div ng-bind-html="post.content | markdown"></div>
+  <img ng-src="{{post.image}}" ng-show="post.image.length" class="header-image" />
+  <div ng-bind-html="post.content"></div>
 </li>
 </ul>

@@ -10,6 +10,16 @@
 
 angular
   .module('wowApp')
+  .controller('NewsCtrl', function($scope, NewsService, angularLoad) {
+    var query = NewsService.get();
+    query.$promise.then(function (data) {
+      $scope.newslog = data.news.slice(0, 10);
+      setTimeout(function() {
+        $WowheadPower.refreshLinks();
+      }, 1);
+    });
+  })
+
   .controller('BlogCtrl', function ($scope, $log, $http, Backand) {
 
     $scope.$log = $log;

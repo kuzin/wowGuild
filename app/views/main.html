@@ -1,1 +1,17 @@
-What should go on the homepage? ... should there be one? Maybe this becomes like rules or something a a subpage.
+<div class="page-header">
+<h3>About</h3>
+</div>
+
+<p>This page should have... Rules, How to Join, Raid Schedule... etc? </p>
+
+<div class="memberList">
+
+  <ul class="roster-window">
+    <li ng-repeat="member in wowData.members | orderObjectBy: 'rank'"
+    ng-style="{'background-image' : 'url(http://render-api-us.worldofwarcraft.com/static-render/us/' + (member.character.thumbnail | processID) + '-profilemain.jpg)'}">
+      <h3>{{member.character.name | limitTo : '10'}}<span ng-if="member.character.name.length > 10">...</span></h3>
+      <img class="wRank"  ng-src="images/ranks/{{member.rank}}.png">
+    </li>
+  </ul>
+
+</div>

@@ -20,18 +20,18 @@ angular
     'ngOrderObjectBy',
     'processIDFilter',
     'angularMoment',
-    'angularUtils.directives.dirPagination',
     'hc.marked',
     'tien.clndr',
-    'oc.lazyLoad',
     'backand',
     'ngSanitize',
-    'markdown'
+    'markdown',
+    'ui.bootstrap',
+    'angularLoad'
   ])
-  .config(function (BackandProvider) {
-      BackandProvider.setAppName('wowapi');
-      BackandProvider.setSignUpToken('27133402-39d7-4c22-9161-98fe93fce4b1');
-      BackandProvider.setAnonymousToken('e3b8a7c6-a2b1-4661-b467-c3e62257a852');
+  .config(function (BackandProvider, APP_NAME, BACKAND_TOKEN, BACKAND_SECRET) {
+      BackandProvider.setAppName(APP_NAME);
+      BackandProvider.setSignUpToken(BACKAND_TOKEN);
+      BackandProvider.setAnonymousToken(BACKAND_SECRET);
   })
   .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     function route (template, ctrl, path) {
@@ -49,7 +49,8 @@ angular
     route('blog' ,    'BlogCtrl',    '/blog');
     route('calendar', 'CalCtrl',     '/calendar');
     route('apply',    'MainCtrl',    '/apply');
-    route('post',     'PostCtrl',    '/blog/post')
+    route('post',     'PostCtrl',    '/blog/post');
+    route('signup',   'LoginCtrl',    '/signup');
 
     // 404
     $routeProvider.otherwise({ redirectTo: '/404' });
@@ -58,7 +59,7 @@ angular
   }]);
 
 angular
-  .module('processIDFilter', []).filter('processID', function() {
+  .module('processIDFilter', []).filter('processID', function () {
     return function(input) {
       var re  = /-avatar\.[^.]+$/,
           str = input.toString(),
@@ -67,7 +68,6 @@ angular
 
       return result;
     };
-
   });
 
 

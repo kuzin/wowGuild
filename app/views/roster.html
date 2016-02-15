@@ -18,7 +18,7 @@
         <tr>
     </thead>
     <tbody>
-        <tr ng-repeat="member in guildAPI.members | orderObjectBy: 'rank'">
+        <tr ng-repeat="member in wowData.members | orderObjectBy: 'rank'">
           <td><img ng-src="//us.battle.net/static-render/us/{{member.character.thumbnail}}"></td>
           <td>{{member.character.name | limitTo : '10'}}</td>
           <td><img class="wRank"  ng-src="images/ranks/{{member.rank}}.png"></td>

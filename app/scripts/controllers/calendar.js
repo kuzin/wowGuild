@@ -31,14 +31,17 @@ angular.module('wowApp')
 
       for (i = 0; i < comp.jCal.length; i++) {
         var data = comp.jCal[i][1];
-        $scope.events.push({
-          title : data[6][3],
-          start : new Date(data[3][3]).getTime(),
-          end   : new Date(data[4][3]).getTime(),
-          organizer : data[9][3],
-          location : data[8][3],
-          description : data[7][3]
-        });
+        console.log(data);
+        if (data[9][3] != 'mailto:blizzard@dalaran.worldofwarcraft') {
+          $scope.events.push({
+            title : data[6][3],
+            start : new Date(data[3][3]).getTime(),
+            end   : new Date(data[4][3]).getTime(),
+            organizer : data[9][3],
+            location : data[8][3],
+            description : data[7][3]
+          });
+        }
       }
 
     });

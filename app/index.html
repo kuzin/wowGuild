@@ -14,6 +14,7 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <script type="text/javascript" src="//wow.zamimg.com/widgets/power.js"></script><script>var wowhead_tooltips = { "colorlinks": true, "iconizelinks": true, "renamelinks": true }</script>
   </head>
   <body ng-app="wowApp">
 
@@ -29,9 +30,8 @@
         <img alt="Brand" class="logo" src="images/ui/slsp.png" >
       </a>
       <ul class="nav navbar-nav navbar-right" auto-active>
-        <li><a ng-href="#/">Home</a></li>
+        <li><a ng-href="#/">About</a></li>
         <li><a ng-href="#/blog">Blog</a></li>
-        <li><a ng-href="#/about">About</a></li>
         <li><a ng-href="#/roster">Roster</a></li>
         <li><a ng-href="#/calendar">Calendar</a></li>
         <li>
@@ -48,7 +48,7 @@
 
     <div class="colorizer container-color">
       <div class="container body">
-        <div class="alert alert-info" role="alert">
+        <div class="alert alert-info border" role="alert">
           <strong>Welcome</strong> to the new Seventh Level Save Point website. This is a constant work in progress. If you have any sugguestions or comments, please contact <strong>Tukao</strong> in game.
         </div>
         <div ng-view=""></div>
@@ -89,6 +89,8 @@
     <script src="bower_components/angularbknd-sdk/dist/backand.min.js"></script>
     <script src="bower_components/showdown/dist/showdown.js"></script>
     <script src="bower_components/angular-markdown-filter/markdown.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-load/angular-load.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -96,13 +98,12 @@
     <script src="scripts/app.js"></script>
     <script src="scripts/api.js"></script>
     <script src="scripts/config.js"></script>
+    <script src="scripts/services/auth.js"></script>
+    <script src="scripts/services/api.js"></script>
     <script src="scripts/controllers/blog.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/calendar.js"></script>
     <script src="scripts/controllers/about.js"></script>
     <!-- endbuild -->
-
-    <script src="//wow.zamimg.com/widgets/power.js"></script>"
-    <script type="javascript">var wowhead_tooltips = { "renamelinks": true, "colorlinks": true, "iconizelinks": true };</script>
 </body>
 </html>
