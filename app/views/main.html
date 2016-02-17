@@ -1,13 +1,36 @@
-<div class="page-header">
-<h3>About</h3>
+
+
+
+<div class="quickStats border padded">
+
+  <h3>About</h3>
+  <hr>
+  <img src="/images/ui/paladin.jpg" />
+
+  <span class="mission-statement">
+    <h3>
+      <strong class="special">{{wowData.name}}</strong> is a World of Warcraft raiding and social guild on the <a ng-href="https://realmpop.com/us-dalaran.html">US {{wowData.realm}}</a> server, and fight for the Alliance Faction.
+      We are focused towards end game PvE progression and preparing for upcoming content and patches.
+    </h3>
+  </span>
+
 </div>
-
-<p>This page should have... Rules, How to Join, Raid Schedule... etc? </p>
-
 <div class="memberList">
-
+  <div class="alert alert-special">
+    We are currently accepting applications to fill our roster for our Weekly Raid Schedule. For more details and to find out how to apply, visit our application page.
+    <a ng-href="/#/apply" class="btn btn-block btn-primary" style="margin-top: 15px">Apply Now!</a>
+  </div>
+</div>
+<div class="memberList border padded">
+  <h3>Raid Schedule</h3>
+  <hr/>
+  <a ng-href="/#/calendar" class="btn btn-primary btn-gold btn-block">View Full Calendar</a>
+</div>
+<div class="memberList border padded">
+  <h3>Randomizer</h3>
+  <hr>
   <ul class="roster-window">
-    <li ng-repeat="member in wowData.members | orderObjectBy: 'rank'"
+    <li ng-repeat="member in members.slice(0, 3)"
     ng-style="{'background-image' : 'url(http://render-api-us.worldofwarcraft.com/static-render/us/' + (member.character.thumbnail | processID) + '-profilemain.jpg)'}">
       <h3>{{member.character.name | limitTo : '10'}}<span ng-if="member.character.name.length > 10">...</span></h3>
       <img class="wRank"  ng-src="images/ranks/{{member.rank}}.png">

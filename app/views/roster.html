@@ -1,24 +1,84 @@
-<div class="roster">
-
-  <div class="page-header">
+<div class="roster padded border">
   <h3>Current Roster</h3>
+  <hr/>
+<!--
+  <div class="alert alert-info">
+    <p>Sort Type: {{ sortType }}</p>
+    <p>Sort Reverse: {{ sortReverse }}</p>
+    <p>Search Query: {{ searchDb }}</p>
   </div>
+ -->
 
-  <table>
+    <form>
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+
+        <input type="text" class="form-control" placeholder="Search Roster..." ng-model="searchDb">
+
+      </div>
+    </div>
+  </form>
+
+  <div class="border">
+
+  <table >
     <thead>
         <tr>
           <th>•</th>
-          <th>Name</th>
-          <th>Rank</th>
-          <th>Race</th>
-          <th>Class</th>
-          <th>Spec</th>
-          <th>Level</th>
-          <th>Achievement Points</th>
+          <th>
+            <a ng-click="sortType = 'character.name'; sortReverse = !sortReverse">
+              Name
+              <span ng-show="sortType == 'character.name' && sortReverse" class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+              <span ng-show="sortType == 'character.name' && !sortReverse" class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+            </a>
+          </th>
+          <th>
+            <a ng-click="sortType = 'rank'; sortReverse = !sortReverse">
+              Rank
+              <span ng-show="sortType == 'rank' && sortReverse" class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+              <span ng-show="sortType == 'rank' && !sortReverse" class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+            </a>
+          </th>
+          <th>
+            <a ng-click="sortType = 'character.race'; sortReverse = !sortReverse">
+              Race
+              <span ng-show="sortType == 'character.race' && sortReverse" class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+              <span ng-show="sortType == 'character.race' && !sortReverse" class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+            </a>
+          </th>
+          <th>
+            <a ng-click="sortType = 'character.class'; sortReverse = !sortReverse">
+              Class
+              <span ng-show="sortType == 'character.class' && sortReverse" class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+              <span ng-show="sortType == 'character.class' && !sortReverse" class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+            </a>
+          </th>
+          <th>
+            <a ng-click="sortType = 'character.spec.name'; sortReverse = !sortReverse">
+              Spec
+              <span ng-show="sortType == 'character.spec.name' && sortReverse" class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+              <span ng-show="sortType == 'character.spec.name' && !sortReverse" class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+            </a>
+          </th>
+          <th>
+            <a ng-click="sortType = 'character.level'; sortReverse = !sortReverse">
+              Level
+              <span ng-show="sortType == 'character.level' && sortReverse" class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+              <span ng-show="sortType == 'character.level' && !sortReverse" class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+            </a>
+          </th>
+          <th>
+            <a ng-click="sortType = 'character.achievementPoints'; sortReverse = !sortReverse">
+              Achievement Points
+              <span ng-show="sortType == 'character.achievementPoints' && sortReverse" class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+              <span ng-show="sortType == 'character.achievementPoints' && !sortReverse" class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+            </a>
+          </th>
         <tr>
     </thead>
     <tbody>
-        <tr ng-repeat="member in wowData.members | orderObjectBy: 'rank'">
+        <tr ng-repeat="member in members | orderBy:sortType:sortReverse  | filter:searchDb">
           <td><img ng-src="//us.battle.net/static-render/us/{{member.character.thumbnail}}"></td>
           <td>{{member.character.name | limitTo : '10'}}</td>
           <td><img class="wRank"  ng-src="images/ranks/{{member.rank}}.png"></td>
@@ -30,6 +90,7 @@
         </tr>
     </tbody>
   </table>
+</div>
 
 
 </div>

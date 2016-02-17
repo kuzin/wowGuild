@@ -1,12 +1,22 @@
-<div class="page-header">
-<h3>Blog</h3>
-</div>
+<div class="newsList border padded" ng-controller="NewsCtrl">
+<h3>News Feed</h3>
+<hr>
 
-<div class="newsList border" ng-controller="NewsCtrl">
-<h4>News Feed</h4>
+  <label>Filter by Category:</label>
+      <div class="filters" auto-active>
+			<a href="" class="glyphicon glyphicon-star" tooltip-placement="top" uib-tooltip="Player Achievements" ng-class="{'active': 1 == states.activeItem}" ng-click="search.type='playerAchievement'; states.activeItem = 1"></a>
+      <a href="" class="glyphicon glyphicon-star" tooltip-placement="top" uib-tooltip="Guild Achievements" ng-class="{'active': 2 == states.activeItem}" ng-click="search.type='guildAchievement'; states.activeItem = 2"></a>
+      <a href="" class="glyphicon glyphicon-gift" tooltip-placement="top" uib-tooltip="Items Looted" ng-class="{'active': 3 == states.activeItem}" ng-click="search.type='itemLoot'; states.activeItem = 3"></a>
+      <a href="" class="glyphicon glyphicon-credit-card" tooltip-placement="top" uib-tooltip="Items Purchased" ng-class="{'active': 4 == states.activeItem}" ng-click="search.type='itemPurchase'; states.activeItem = 4"></a>
+      <a href="" class="glyphicon glyphicon-wrench" tooltip-placement="top" uib-tooltip="Items Crafted" ng-class="{'active': 5 == states.activeItem}" ng-click="search.type='itemCraft'; states.activeItem = 5"></a>
+      </div>
+      <p><strong><a href="" ng-click="resetFilters(); states.activeItem = null">Show All</a></strong></p>
+
+      <hr>
+      <div ng-show="totalItems == 0">No Results!</div>
 
   <ul class="guild-news">
-    <li ng-repeat="story in newslog" class="{{story.type}}">
+    <li ng-repeat="story in filtered = newslog | filter:search | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit" class="{{story.type}}">
       <div class="achievement" ng-show="{{story.type == 'guildAchievement'}}">
         <a ng-href="http://wowhead.com/achievement={{story.achievement.id}}">{{story.achievement.title}}</a>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -39,11 +49,20 @@
       </div>
     </li>
   </ul>
+  <div ng-hide="totalItems <= entryLimit">
+    {{currentPage}} / {{noOfPages}}
+    <uib-pager total-items="totalItems" ng-model="currentPage"></uib-pager>
+  </div>
 </div>
-<ul class="blog border">
-<li ng-repeat="post in posts.data | orderBy : post.id : true">
-  <h2 ng-bind-html="post.title | markdown"></h2>
-  <img ng-src="{{post.image}}" ng-show="post.image.length" class="header-image" />
-  <div ng-bind-html="post.content"></div>
-</li>
-</ul>
+<div class="blog border padded">
+  <h3>Blog</h3>
+  <hr>
+  <article ng-repeat="post in posts.data | orderBy : post.id : true">
+    <h2 ng-bind-html="post.title"></h2>
+    <span class="meta">{{post.user}}</span>
+    <span class="meta">Posted on: {{post.date | date}}</span>
+
+    <img ng-src="{{post.image}}" ng-show="post.image.length" class="header-image" />
+    <div ng-bind-html="post.content"></div>
+  </article>
+</div>

@@ -43,14 +43,13 @@ angular
 
     // Main Routes
     route('main',     'MainCtrl',    '/');
-    route('roster',   'MainCtrl',    '/roster');
+    route('roster',   'RosterCtrl',  '/roster');
     route('about',    'MainCtrl',    '/about');
     route('404',      'MainCtrl',    '/404');
     route('blog' ,    'BlogCtrl',    '/blog');
     route('calendar', 'CalCtrl',     '/calendar');
     route('apply',    'MainCtrl',    '/apply');
-    route('post',     'PostCtrl',    '/blog/post');
-    route('signup',   'LoginCtrl',    '/signup');
+    route('rules',    'MainCtrl',    '/rules');
 
     // 404
     $routeProvider.otherwise({ redirectTo: '/404' });
@@ -59,7 +58,8 @@ angular
   }]);
 
 angular
-  .module('processIDFilter', []).filter('processID', function () {
+  .module('processIDFilter', [])
+  .filter('processID', function () {
     return function(input) {
       var re  = /-avatar\.[^.]+$/,
           str = input.toString(),
@@ -68,6 +68,15 @@ angular
 
       return result;
     };
+  })
+  .filter('startFrom', function () {
+  	return function (input, start) {
+  		if (input) {
+  			start = +start;
+  			return input.slice(start);
+  		}
+  		return [];
+  	};
   });
 
 
@@ -105,3 +114,10 @@ angular
             }
         }
     }]);
+
+
+angular
+  .module('wowApp')
+  .config(['markedProvider', function (markedProvider) {
+    markedProvider.setOptions({gfm: true});
+}]);

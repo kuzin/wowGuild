@@ -10,10 +10,54 @@
 
 angular
   .module('wowApp')
-  .controller('NewsCtrl', function($scope, NewsService, angularLoad) {
+  .controller('NewsCtrl', function($scope, ApiService, NewsService, filterFilter, angularLoad) {
+    //
+    // var queryTwo = ApiService.get();
+    //
+    // queryTwo.$promise.then(function (data) {
+    //   // console.log(data.members, filterFilter(data.members, {'name' : 'Tukao'}));
+    // })
+
+
     var query = NewsService.get();
+
+    $scope.results == true;
+
     query.$promise.then(function (data) {
-      $scope.newslog = data.news.slice(0, 10);
+      $scope.newslog = data.news;
+
+      $scope.search = {};
+
+      $scope.resetFilters = function () {
+    		$scope.search = {};
+    	};
+
+      $scope.currentPage = 1;
+    	$scope.totalItems = $scope.newslog.length;
+    	$scope.entryLimit = 5; // items per page
+    	$scope.noOfPages = Math.ceil($scope.totalItems / $scope.entryLimit);;
+
+      $scope.$watch('search', function (newVal, oldVal) {
+    		$scope.filtered = filterFilter($scope.newslog, newVal);
+    		$scope.totalItems = $scope.filtered.length;
+    		$scope.noOfPages = Math.ceil($scope.totalItems / $scope.entryLimit);
+    		$scope.currentPage = 1;
+        setTimeout(function() {
+          $WowheadPower.refreshLinks();
+        }, 1);
+        console.log($scope.totalItems);
+        if ($scope.totalItems == 0) {
+          $scope.results == true;
+          console.log('true');
+        }
+    	}, true);
+
+      $scope.$watch('currentPage', function(newPage){
+        setTimeout(function() {
+          $WowheadPower.refreshLinks();
+        }, 1);
+      });
+
       setTimeout(function() {
         $WowheadPower.refreshLinks();
       }, 1);

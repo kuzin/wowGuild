@@ -6,8 +6,196 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+$light-blue : rgb(41,53,97);
+$blue: darken($light-blue, 7);
+$gold: #DFA55A;
 
-$blue: darken(rgb(41,53,97), 15);
+$sidebarWidth : 336px;
+$contentWidth : 638px;
+$listRows : 1;
+$listHeight : 150px;
+$width : $sidebarWidth - 66;
+
+$screen-xs-max: 0 !important;
+$grid-float-breakpoint: 0 !important;
+
+// Navbar Responsive Hack
+@media (max-width: 768px) {
+    .navbar-header {
+        float: left;
+    }
+
+    .navbar {
+        border-radius: 4px;
+        min-width: 400px;
+    }
+
+    .nav-tabs-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+    .nav-tabs-justified > .active > a,
+    .nav-tabs-justified > .active > a:hover,
+    .nav-tabs-justified > .active > a:focus {
+        border-bottom-color: #fff;
+    }
+
+    .nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+    .nav-justified > li > a {
+        margin-bottom: 0;
+    }
+
+    .nav-tabs.nav-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+    .nav-tabs.nav-justified > .active > a,
+    .nav-tabs.nav-justified > .active > a:hover,
+    .nav-tabs.nav-justified > .active > a:focus {
+        border-bottom-color: #fff;
+    }
+
+    .nav-tabs.nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+    .nav-tabs.nav-justified > li > a {
+        margin-bottom: 0;
+    }
+
+    .navbar-right .dropdown-menu {
+        right: 0;
+        left: auto;
+    }
+    .navbar-right .dropdown-menu-left {
+        right: auto;
+        left: 0;
+    }
+    .container {
+        min-width: 1000px;
+    }
+
+    .navbar-collapse {
+        width: auto;
+        border-top: 0;
+        box-shadow: none;
+    }
+    .navbar-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+    .navbar-collapse.in {
+        overflow-y: visible;
+    }
+    .navbar-fixed-top .navbar-collapse,
+    .navbar-static-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .container > .navbar-header,
+    .container-fluid > .navbar-header,
+    .container > .navbar-collapse,
+    .container-fluid > .navbar-collapse {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .navbar-static-top {
+        border-radius: 0;
+    }
+
+    .navbar-fixed-top,
+    .navbar-fixed-bottom {
+        border-radius: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .navbar-nav {
+        float: left;
+        margin: 0;
+    }
+    .navbar-nav > li {
+        float: left;
+    }
+    .navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .navbar-nav.navbar-right:last-child {
+        margin-right: -15px;
+    }
+
+    .navbar-left {
+        float: left !important;
+    }
+    .navbar-right {
+        float: right !important;
+    }
+
+    .navbar-form .form-group {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .navbar-form .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+    .navbar-form .control-label {
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .navbar-form .radio,
+    .navbar-form .checkbox {
+        display: inline-block;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .navbar-form .radio input[type="radio"],
+    .navbar-form .checkbox input[type="checkbox"] {
+        float: none;
+        margin-left: 0;
+    }
+    .navbar-form .has-feedback .form-control-feedback {
+        top: 0;
+    }
+
+    .navbar-form {
+        width: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+        border: 0;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+    .navbar-form.navbar-right:last-child {
+        margin-right: -15px;
+    }
+
+    .navbar-text {
+        float: left;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .navbar-text.navbar-right:last-child {
+        margin-right: 0;
+    }
+}
 
 .navbar-inverse {
   background: $blue !important;
@@ -34,7 +222,7 @@ body {
   font-family: 'Muli';
   color: #aaa;
   a, a:link, a:visited, a:active {
-    color: #DFA55A;
+    color: $gold;
     font-weight: 400;
   }
   h1, h2, h3, h4, h5, h6 {
@@ -42,11 +230,64 @@ body {
   }
 }
 
+h1 {}
+h2 {}
+h3 {}
+h4 {
+  line-height: 26px;
+}
+h5 {}
+h6 {}
+p {
+  font-size: 14px;
+  line-height: 18px;
+}
+strong {
+  font-weight: 600;
+  &.special {
+    color: $gold;
+    &:before {
+      content: '<';
+    }
+    &:after {
+      content: '>';
+    }
+  }
+}
+.rules { ul {
+  margin: 4px 0;
+  padding: 0 0 0 0;
+  list-style: none;
+  li {
+    margin: 12px 0;
+    padding: 0 0 0 40px;
+    background-image: url('/images/ui/ui-checkbox-check.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+} }
+
 .alert {
   &.alert-info {
     text-align: center;
     color: #aaa;
   }
+  &.alert-special {
+    background: $gold;
+    color: $blue;
+    .btn-primary {
+      background: $blue;
+      border-color: $blue;
+      color: white;
+    }
+  }
+}
+
+hr {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
 }
 
 h3 {
@@ -54,6 +295,7 @@ h3 {
 }
 
 .navbar-brand {
+  margin-left: -15px !important;
   img.emblem {
     float: left;
     width: 30px;
@@ -124,40 +366,41 @@ h3 {
 
 .container {
   &.body { padding: 20px 0; }
+  width: 1000px;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 1000px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
+// /* Responsive: Portrait tablets and up */
+// @media screen and (min-width: 768px) {
+//   .container {
+//     max-width: 1000px;
+//   }
+//
+//   /* Remove the padding we set earlier */
+//   .header,
+//   .marketing,
+//   .footer {
+//     padding-left: 0;
+//     padding-right: 0;
+//   }
+//   /* Space out the masthead */
+//   .header {
+//     margin-bottom: 30px;
+//   }
+//   /* Remove the bottom border on the jumbotron for visual effect */
+//   .jumbotron {
+//     border-bottom: 0;
+//   }
+// }
 
 
 .newsList {
-  width: 250px;
+  width: $sidebarWidth;
   float: right;
   @include border-radius(5px);
-  ul {
+  ul.guild-news {
     list-style: none;
     margin: 0 !important;
-    padding: 10px !important;
+    padding: 0;
     li {
       background-color: darken(#222, 5);
       border-radius: 5px;
@@ -167,6 +410,13 @@ h3 {
       padding: 10px;
       color: #666;
       font-size: 13px;
+      .icontinyl {
+        background-position: 0 4px !important;
+        padding-left: 22px !important;
+        span {
+          margin-left: 0 !important;
+        }
+      }
       span {
         margin-right: 5px;
       }
@@ -174,6 +424,10 @@ h3 {
         display: block;
         font-size: 16px;
         text-decoration: none;
+        color: #111;
+        &.icontinyl {
+          color: $gold;
+        }
       }
       time {
         display: block;
@@ -269,24 +523,37 @@ h3 {
   }
 }
 
+.quickStats {
+  width: $contentWidth;
+  float: left;
+  img {
+    max-width: 100%;
+    @extend .border;
+  }
+}
+
 .memberList {
-  @extend .border;
+  float: right;
+  width: $sidebarWidth;
   ul.roster-window {
     @include reset-list-style();
     margin: 0 !important;
-    padding: 11px;
+    padding: 0;
     li {
       @extend .border-noimage;
       display: inline-block;
-      height: 300px;
-      width: 300px;
+      height: $listHeight;
+      width: ($width / $listRows) - 5;
+      margin: 0 6px 0 0;
+      &:nth-child(5) {
+        margin: 0 0 0 0 !important;
+      }
       overflow: hidden;
       @include reset-list-style();
       @include box-sizing(border-box);
       @include background-size(150%);
       @include border-radius(5px);
       background-position: 58% 40% !important;
-      margin: 7px;
       padding: 0;
       position: relative;
       h3 {
@@ -475,6 +742,7 @@ h3 {
   border-image-slice: 12 12 12 12;
   border-image-width: 12px 12px 12px 12px;
   border-image-repeat: stretch stretch;
+  margin-bottom: 20px;
 }
 
 .border-noimage {
@@ -484,13 +752,16 @@ h3 {
   border-image-repeat: stretch stretch;
 }
 
+.padded {
+  padding: 10px 30px 30px 30px;
+}
+
 .blog {
   list-style: none;
   margin: 0;
-  padding: 10px 20px 10px 20px;
-  width: 622px + 40;
+  width: $contentWidth;
   color: #ddd;
-  li {
+  article {
     list-style: none;
     border-bottom: 3px solid #333;
     padding: 10px 0;
@@ -503,6 +774,36 @@ h3 {
     }
     .header-image {
       margin-bottom: 20px;
+    }
+  }
+}
+
+
+div.filters {
+  text-align: right;
+  position: relative;
+  top: -30px;
+
+  a {
+    display: block;
+    float: right;
+    overflow: hidden;
+    font-size: 10px;
+    line-height: 31px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: url('/images/ui/ui-microbuttoncharacter-up.png') top left no-repeat;
+    width: 24px;
+    height: 31px;
+    text-decoration: none !important;
+    &:hover {
+      background: url('/images/ui/ui-microbuttoncharacter-down.png') top left no-repeat;
+      text-decoration: none !important;
+    }
+    &.active {
+      background: url('/images/ui/ui-microbuttoncharacter-down.png') top left no-repeat;
+      color: white;
     }
   }
 }

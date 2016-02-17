@@ -23,7 +23,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
       <a class="navbar-brand" ng-href="#/">
         <img alt="Emblem" class="emblem" src="images/ui/emblem_194.png" >
@@ -33,6 +33,7 @@
         <li><a ng-href="#/">About</a></li>
         <li><a ng-href="#/blog">Blog</a></li>
         <li><a ng-href="#/roster">Roster</a></li>
+        <li><a ng-href="#/rules">Rules</a></li>
         <li><a ng-href="#/calendar">Calendar</a></li>
         <li>
           <p class="navbar-btn" style="margin-left: 15px;">
@@ -48,9 +49,9 @@
 
     <div class="colorizer container-color">
       <div class="container body">
-        <div class="alert alert-info border" role="alert">
+        <!-- <div class="alert alert-info border" role="alert">
           <strong>Welcome</strong> to the new Seventh Level Save Point website. This is a constant work in progress. If you have any sugguestions or comments, please contact <strong>Tukao</strong> in game.
-        </div>
+        </div> -->
         <div ng-view=""></div>
       </div>
     </div>
@@ -104,6 +105,7 @@
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/calendar.js"></script>
     <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/roster.js"></script>
     <!-- endbuild -->
 </body>
 </html>
